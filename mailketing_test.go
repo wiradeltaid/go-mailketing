@@ -138,7 +138,7 @@ func TestGetCredits_Success(t *testing.T) {
 			Success: true,
 			Data: mailketing.CreditsData{
 				Credits: 1500,
-				Email:   "owner@wiradelta.id",
+				Email:   "owner@wiradelta.com",
 			},
 			Message: "OK",
 		}
@@ -163,7 +163,7 @@ func TestGetSenders_Success(t *testing.T) {
 		}
 		resp := mailketing.SendersResponse{
 			Success: true,
-			Data:    []string{"notification@wiradelta.id", "admin@wiradelta.id"},
+			Data:    []string{"notification@wiradelta.com", "admin@wiradelta.com"},
 			Message: "OK",
 		}
 		_ = json.NewEncoder(w).Encode(resp)

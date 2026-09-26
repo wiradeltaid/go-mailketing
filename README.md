@@ -28,7 +28,7 @@ import (
 
 func main() {
 	client := mailketing.NewClient("YOUR_API_TOKEN",
-		mailketing.WithDefaultSender("Wira Delta Indonesia", "notification@wiradelta.id"),
+		mailketing.WithDefaultSender("Wira Delta Indonesia", "notification@wiradelta.com"),
 	)
 
 	resp, err := client.Send(context.Background(), mailketing.SendEmailRequest{
